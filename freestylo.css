@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background:#000;
+ 	color:#fff;
+ 	font-family:PrimeRegular;
+	font-size:24px;
+}
+
+#header #MainNav{
+	list-style-type: none;
+    margin-top: -5%;
+    padding: 0;
+    overflow: hidden;
+	float:right;
+}
+
+#header{
+ background:#000 ;
+ height:3em ;
+}
+#header h1{
+  padding-left:2em;
+  margin-top:1em;;
+}
+
+#MainNav li{
+	float:left;
+	width:150px;
+	text-align:center;
+	display:block-inline;
+}
+
+#MainNav a {
+    display: block;
+    padding: 10px;
+	text-decoration:none;
+    color:#fff;
+		-webkit-transition: 300ms ease-out;
+	  transition: 300ms ease-out;
+}
+#MainNav a:hover{
+	background:#d62f2f;
+
+}
+#content{
+	margin:4em;
+	border:thick solid #fff;
+}
+#projectLink{
+	opacity: 1;
+	-webkit-transition: opacity 300ms ease-out;
+  transition: opacity 300ms ease-out;
+}
+#projectLink:hover
+{
+	opacity: 0.5;
+}
+
+#logo{
+	border:thick solid #d62f2f;
+	margin-bottom: 40px;
+	}
+#prev{
+	float:left;
+}
+#next{
+	float:right;
+}
+#contentcontact{
+	padding: 2em;
+	float:left;
+	display: block-inline;
+	border:thick solid #fff;
+}
+#Contact{
+	padding: 2em;
+	float: right;
+	border:thick solid #fff;
+}
+.animatedfadein{
+	animation-name: fadein;
+	animation-duration: 3s;
+}
+#content p,h2{
+
+	padding-left:10px;
+}
+button {
+  width: 30px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  outline: none;
+  opacity: 0.5;
+  -webkit-transition: opacity 300ms ease-out;
+  transition: opacity 300ms ease-out;
+}
+button:hover {
+  opacity: 1;
+}
+#footer{
+	clear: both;
+	padding:1.5em;
+}
+
+@media screen and (max-width: 400px){
+	button {
+		height: 1000px;
+	}
+
+}
+@font-face {
+	font-family:PrimeRegular;
+	src:url(PrimeRegular.otf);
+}
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
