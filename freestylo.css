@@ -146,11 +146,19 @@ input[type=text] {
     box-sizing: border-box;
 		border
 }
-@media screen and (max-width: 400px){
-	button {
-		height: 1000px;
-	}
+@media screen and (max-width: 1010px){
 
+	#Contact{
+		min-width: 300px
+	}
+	#contentcontact{
+		min-width: 300px
+	}
+	#pagecon{
+		display: flex;
+		flex-direction: column;
+		margin-left: 17%;
+	}
 }
 @font-face {
 	font-family:PrimeRegular;
