@@ -10,10 +10,10 @@ var conText;
 var logodheadtext;
 
 
-
+var links = new Array("https://www.youtube.com/watch?v=2cjbSgy3vSw","https://github.com/RaudseppSiim","https://github.com/RaudseppSiim","https://github.com/RaudseppSiim");
 var contentText = new Array("Ma olen 18 aastane Tallinna Polütehnikumi õpilane, kes on rõõmsameelne ja õpihimuline. Mulle meeldib arendada oma mõtlemist erinevate mõistatuste ja ülesannetega. ",
-"Ma pean suurt lugu muusikast ja arvutimängudest. Need 2 asja on terve mu elus olnud suured sõbrad.",
-"Ma olen osav mitmetes asjades. Ma olen kiire taibu ja laia silmaringiga.");
+"Ma pean suurt lugu muusikast ja arvutimängudest. Need 2 asja on terve mu elu olnud suured sõbrad.",
+"Ma olen osav mitmetes asjades. Ma olen kiire taibu ja laia silmaringiga. Ma tean kõiki Minecrafti retsepte peast.");
 var contentHead = new Array("Mina","Hobid","Oskused");
 var logo_head = new Array("Game", "Windows Forms", "Android", "Web");
 var logoimg = new Array("images/image0.jpg","images/image1.png","images/image2.png","images/image3.png");
@@ -95,18 +95,22 @@ function changeTexT(){
 
 		conHeader.classList.add("animatedfadein");
 		conText.classList.add("animatedfadein");
-	document.getElementById("content_header").innerHTML = contentHead[thisCont];
-	document.getElementById("content_para").innerHTML = contentText[thisCont];
-	setTimeout("removeClassesAvaleht()",3000);
+		document.getElementById("content_header").innerHTML = contentHead[thisCont];
+		document.getElementById("content_para").innerHTML = contentText[thisCont];
+		setTimeout("removeClassesAvaleht()",3000);
+
 	}
 
 	if(page == "works.html")
 	{
-	logod.classList.add("animatedfadein");
-	logodheadtext.classList.add("animatedfadein");
-	document.getElementById("content_Workshead").innerHTML = logo_head[thisCont];
-	document.getElementById("logo").src = logoimg[thisCont];
-	setTimeout("removeClassesWork()",3000);
+
+		logod.classList.add("animatedfadein");
+		logodheadtext.classList.add("animatedfadein");
+		document.getElementById("content_Workshead").innerHTML = logo_head[thisCont];
+		document.getElementById("logo").src = logoimg[thisCont];
+		document.getElementById("projectLink").href = links[thisCont];
+		setTimeout("removeClassesWork()",3000);
+
 	}
 }
 function removeClassesAvaleht(){

@@ -42,11 +42,13 @@ body{
 }
 #MainNav a:hover{
 	background:#d62f2f;
+	border-radius: 2.5px;
 
 }
 #content{
 	margin:4em;
 	border:thick solid #fff;
+	border-radius: 5px;
 }
 #projectLink{
 	opacity: 1;
@@ -71,20 +73,51 @@ body{
 #contentcontact{
 	padding: 2em;
 	float:left;
-	display: block-inline;
+	display: block;
 	border:thick solid #fff;
+	border-radius: 5px;
+}
+#Resume{
+	text-align: center;
+	text-decoration: none;
+	padding: 1px 0 1px 0;
+	color: #fff;
+	display: block;
+	-webkit-transition: 300ms ease-out;
+	transition: 300ms ease-out;
+}
+
+#contentcontact a:hover{
+	background-color: #d62f2f;
+}
+#pagecon{
+	padding-top: 2em;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 #Contact{
 	padding: 2em;
+	display: block;
 	float: right;
 	border:thick solid #fff;
+	border-radius: 5px;
 }
 .animatedfadein{
 	animation-name: fadein;
 	animation-duration: 3s;
 }
+#Submit{
+		background-color: #d62f2f;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+		border-radius: 2.5px;
+    font-size: 16px;
+}
 #content p,h2{
-
 	padding-left:10px;
 }
 button {
@@ -106,7 +139,13 @@ button:hover {
 	clear: both;
 	padding:1.5em;
 }
-
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+		border
+}
 @media screen and (max-width: 400px){
 	button {
 		height: 1000px;
