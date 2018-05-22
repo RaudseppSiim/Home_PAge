@@ -8,7 +8,7 @@ var logod;
 var conHeader;
 var conText;
 var logodheadtext;
-
+var valueTimeout;
 
 var links = new Array("https://www.youtube.com/watch?v=2cjbSgy3vSw","https://github.com/RaudseppSiim","https://github.com/RaudseppSiim","https://github.com/RaudseppSiim");
 var contentText = new Array("Ma olen 18 aastane Tallinna Polütehnikumi õpilane, kes on rõõmsameelne ja õpihimuline. Mulle meeldib arendada oma mõtlemist erinevate mõistatuste ja ülesannetega. ",
@@ -46,7 +46,7 @@ function init()
 	}
 	changeTexT();
 	console.log(thisCont);
-	setTimeout("init()",10*1000);
+	valueTimeout=setTimeout("init()",10*1000);
 }
 
 function prev(){
@@ -67,6 +67,7 @@ if(page == "works.html")
 console.log(thisCont);
  thisCont--;
  changeTexT();
+ clearTimeout(valueTimeout);
 }
 
 function next(){
@@ -87,6 +88,7 @@ if(page == "Avaleht.html")
 	}
 	console.log(thisCont);
  changeTexT();
+ clearTimeout(valueTimeout);
 }
 
 function changeTexT(){
@@ -97,7 +99,7 @@ function changeTexT(){
 		conText.classList.add("animatedfadein");
 		document.getElementById("content_header").innerHTML = contentHead[thisCont];
 		document.getElementById("content_para").innerHTML = contentText[thisCont];
-		setTimeout("removeClassesAvaleht()",3000);
+		setTimeout("removeClassesAvaleht()",1000);
 
 	}
 
@@ -109,7 +111,7 @@ function changeTexT(){
 		document.getElementById("content_Workshead").innerHTML = logo_head[thisCont];
 		document.getElementById("logo").src = logoimg[thisCont];
 		document.getElementById("projectLink").href = links[thisCont];
-		setTimeout("removeClassesWork()",3000);
+		setTimeout("removeClassesWork()",1000);
 
 	}
 }

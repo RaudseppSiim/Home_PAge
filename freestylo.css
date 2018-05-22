@@ -104,7 +104,7 @@ body{
 }
 .animatedfadein{
 	animation-name: fadein;
-	animation-duration: 3s;
+	animation-duration: 1s;
 }
 #Submit{
 		background-color: #d62f2f;
