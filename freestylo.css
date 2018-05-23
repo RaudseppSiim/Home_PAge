@@ -82,6 +82,7 @@ body{
 	text-decoration: none;
 	padding: 1px 0 1px 0;
 	color: #fff;
+	border-radius: 2.5px;
 	display: block;
 	-webkit-transition: 300ms ease-out;
 	transition: 300ms ease-out;
@@ -146,17 +147,19 @@ input[type=text] {
     box-sizing: border-box;
 		border
 }
-@media screen and (max-width: 1010px){
+@media screen and (max-width: 1050px){
 
 	#Contact{
 		min-width: 300px
 	}
 	#contentcontact{
-		min-width: 300px
+		margin-top: 10px;
+		min-width: 300px;
 	}
 	#pagecon{
 		display: flex;
 		flex-direction: column;
+		justify-content: space-between;
 		margin-left: 17%;
 	}
 }
